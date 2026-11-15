@@ -1,0 +1,5 @@
+# Baseline scope: upstream runtime plus its plugin test dependencies.
+-r ../requirements.txt
+-r ../core/src/drivers/plugins/python/modbus_master/requirements.txt
+-r ../core/src/drivers/plugins/python/modbus_slave/requirements.txt
+-r ../core/src/drivers/plugins/python/opcua/requirements.txt
