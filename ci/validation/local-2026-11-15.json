@@ -1,0 +1,185 @@
+{
+  "bootloader": {
+    "diagnostic_toolchain_archive": {
+      "arch": "amd64",
+      "filename": "go1.25.0.linux-amd64.tar.gz",
+      "kind": "archive",
+      "os": "linux",
+      "sha256": "2852af0cb20a13139b3448992e69b868e50ed0f8a1e5940ee1de9e19a123b613",
+      "size": 59659213,
+      "source": "https://go.dev/dl/?mode=json&include=all",
+      "version": "go1.25.0"
+    },
+    "go_vet": "pass",
+    "gofmt": "pass",
+    "jsonl_sha256": "8cc8daa9edf9353526b42218226c56af6bb776d3a80fc7863a12fe10dfcd6043",
+    "packages_passed": 8,
+    "packages_without_tests": 2,
+    "race_tests": {
+      "failed": 0,
+      "passed": 177,
+      "skipped": 0
+    }
+  },
+  "cross_target_wheel_resolution": [
+    {
+      "architecture": "x86_64",
+      "binary_only": true,
+      "execution_test": false,
+      "glibc_platform_tags": "manylinux 2.17 through 2.41 plus manylinux2014",
+      "hash_required": true,
+      "packages": 56,
+      "python": "3.12",
+      "report_sha256": "caaebd1c11a8d9b0c127322dea4a703a33406cb408ac132547f8c9823c05dc18",
+      "selected_wheels_glibc_floor": "2.34",
+      "status": "pass"
+    },
+    {
+      "architecture": "aarch64",
+      "binary_only": true,
+      "execution_test": false,
+      "glibc_platform_tags": "manylinux 2.17 through 2.41 plus manylinux2014",
+      "hash_required": true,
+      "packages": 56,
+      "python": "3.12",
+      "report_sha256": "6db2c175ba9fcdfe69187088c6e9481c82dd4077c7d41f79067bc2bd90a41217",
+      "selected_wheels_glibc_floor": "2.34",
+      "status": "pass"
+    },
+    {
+      "architecture": "x86_64",
+      "binary_only": true,
+      "execution_test": false,
+      "glibc_platform_tags": "manylinux 2.17 through 2.41 plus manylinux2014",
+      "hash_required": true,
+      "packages": 56,
+      "python": "3.13",
+      "report_sha256": "c534d1bac1a207d1832463ba24a7fe2169f66765e42901032e9d979aa79f4118",
+      "selected_wheels_glibc_floor": "2.34",
+      "status": "pass"
+    },
+    {
+      "architecture": "aarch64",
+      "binary_only": true,
+      "execution_test": false,
+      "glibc_platform_tags": "manylinux 2.17 through 2.41 plus manylinux2014",
+      "hash_required": true,
+      "packages": 56,
+      "python": "3.13",
+      "report_sha256": "f83d3bb5c4d0691f3224bfa9c63341d6c4d8311da574b64caa8a23b3213df18a",
+      "selected_wheels_glibc_floor": "2.34",
+      "status": "pass"
+    }
+  ],
+  "date": "2026-11-15",
+  "environment": {
+    "cmake": "4.4.5",
+    "cxx": "GCC 14.2.0",
+    "glibc": "2.41",
+    "go": "go1.25.0 linux/amd64",
+    "go_toolchain": "local",
+    "ninja": "1.13.2.git.kitware.jobserver-pipe-1",
+    "platform": "Linux x86_64",
+    "python": "3.12.14",
+    "resolver_pip": "26.2.2",
+    "shellcheck": "0.11.0",
+    "tool_install_scope": "Temporary directories only; no host/image changes",
+    "venv_pip": "25.0.1"
+  },
+  "host_tests": {
+    "log_sha256": "80f93e22af95c302a0180cc0517068f67fad1e9f1475000a1b2a17ea62bfaff5",
+    "status": "pass",
+    "suites": 6
+  },
+  "native_build": {
+    "artifact": "plc_main",
+    "artifact_sha256": "38d84081163ed17d48616ee0847435ac5647c1174bec2e8c12e6338dde1b2974",
+    "artifact_type": "ELF64 x86-64 PIE dynamically linked",
+    "build_log_sha256": "6c4d5b4e290b53bb9a7e00946c68d55ddad5be429e6085d9e589a9f5c6c98ffd",
+    "cmake_configuration": "Release/Ninja",
+    "compile_link_tasks": 24,
+    "note": "Host architecture build only; CMake used local Python pkg-config/lib path",
+    "parallel": 2,
+    "status": "pass"
+  },
+  "native_installer_contract": {
+    "status": "pass"
+  },
+  "plugins": {
+    "failed": 0,
+    "passed": 46,
+    "report_sha256": "73d33ca95ca46d965054eefdc38f8e74d44bd70152f6a27cfbc4101b563fd78e",
+    "skipped": 0,
+    "total": 46
+  },
+  "python_lock": {
+    "exact_installed_versions": "pass",
+    "install": "Fresh venv: pip --require-hashes --only-binary=:all:",
+    "lock_sha256": "c252d474e21ea6b4759041bdcd8ca0533cace0ba9515669d83b81a1d34196ea8",
+    "packages": 56,
+    "pip_check": "No broken requirements found.",
+    "regression_tests": {
+      "failed": 0,
+      "passed": 6
+    },
+    "status": "pass",
+    "tampered_wheel_sha256": "pip rejected mismatched hash (expected exit 1)"
+  },
+  "remaining": [
+    "Run the unchanged complete baseline in the existing unity wrapper and immutable image",
+    "CPython 3.13 and aarch64 tests were not executed locally",
+    "No WB deploy, restart, hardware I/O or runtime qualification was performed",
+    "No test-count baseline was frozen"
+  ],
+  "schema": "vx.openplc.local-validation/1",
+  "scope": "Local diagnostic execution; not a complete green unity baseline or WB hardware qualification",
+  "shellcheck": {
+    "scope": [
+      "ci/vx-check.sh",
+      "install.sh",
+      "scripts/install-docker.sh",
+      "windows/provision-msys2.sh",
+      "tests/integration/harness.sh"
+    ],
+    "status": "pass"
+  },
+  "source_base_sha": "d11041e6e9efc65c3f03d8b8c451b999299cdebd",
+  "source_input_sha256": {
+    "CMakeLists.txt": "8e68970470860960487b2d317702bfcd858242790bf9ed5a18b03802bb68e409",
+    "bootloader/go.mod": "e70995a80ed97491cadaf3665a6a76e1fda18c47170e18a49f387519e5b4f47b",
+    "bootloader/go.sum": "59d6f9f0590f841c826c0c2003f906b038b16397a886eaef7a562ac031b68d6b",
+    "ci/check_python_lock.py": "976eaf6919221d9b9274bf2b3bf46effce282a21136cee8d633ed04249de22c2",
+    "ci/python-lock.json": "5215d3966b74bf4c082833700508a364eb946451e1ba0a976910631741a2c384",
+    "ci/requirements-linux.in": "20e7a1436ea7dd17fd46ff6e0c6d47380e7a18328ccf94571503431e6ea3a1a4",
+    "ci/requirements-linux.lock": "c252d474e21ea6b4759041bdcd8ca0533cace0ba9515669d83b81a1d34196ea8",
+    "ci/test_python_lock.py": "d3a18cc8e1921ea67648ab2f3c509f372abf7f366a8418e3a57e3f12680482a0",
+    "ci/update_python_lock.py": "93eca69c69f97373ee8414f848210a9a1b349e92e22ff3b9569efcc8e1757fbc",
+    "ci/vx-check.sh": "8cee78cccd8c4006418a06c5679867615a55ef2b0631989e288ad754fc4ec649",
+    "core/src/CMakeLists.txt": "863816aef01683da02f1a09235a624ff4d2ee7af9a8762a9828991c74910e903",
+    "core/src/drivers/plugins/python/modbus_master/requirements.txt": "f89b831c8abd3ffbb1a17cb732213fd2dca24dceb59299925aba34b05b95eb8a",
+    "core/src/drivers/plugins/python/modbus_slave/requirements.txt": "be9d7a1dc205b2d4d9565b4ef813ce4269fbaf08252a3cd977afaef430b4ab15",
+    "core/src/drivers/plugins/python/opcua/requirements.txt": "7ac1fd5cd9296bf9a4ce14ec93348e74a63666353a483c02dcab8429c68668fc",
+    "requirements.txt": "12f0c5154fb06b4904be3b83a2452fe10d9df26acf10cb74cf4ebaf176c9140f",
+    "tests/host/run.sh": "415d2cb613879d79e4c744466def63a7e8997a70a9bc67f8b01fbc1ea64df27a"
+  },
+  "webserver": {
+    "exclusions_changed": false,
+    "failed": 6,
+    "failed_tests": [
+      "tests.pytest.discovery.test_etherdog_manager.test_command_says_hello_and_returns_reply",
+      "tests.pytest.discovery.test_etherdog_manager.test_upload_stops_the_bus_and_only_stages_the_config",
+      "tests.pytest.discovery.test_etherdog_manager.test_command_captures_hello_features_and_version",
+      "tests.pytest.discovery.test_etherdog_manager.test_each_hello_replaces_the_cached_features",
+      "tests.pytest.discovery.test_etherdog_manager.test_stop_and_disable_clear_the_cached_hello",
+      "tests.pytest.runtime.test_runtime_socket_wait.test_connects_once_the_socket_appears_without_errors"
+    ],
+    "failure_class": "AF_UNIX socket creation denied by local execution sandbox: five direct PermissionError failures, one connection assertion after delayed socket server could not start",
+    "independent_probe": "socket.socket(AF_UNIX, SOCK_STREAM) raised PermissionError [Errno 1] Operation not permitted",
+    "invocation": "Existing webserver scope; --maxfail=0 collected all outcomes after default --maxfail=3 stopped at 103 passed/3 failed",
+    "passed": 332,
+    "report_sha256": "0c84bbe27fab89c4ba1af32b93fbb8d894816ec60aed6758ff94ac51d5c1505b",
+    "skipped": 0,
+    "status": "failed_environment_restriction",
+    "total": 338
+  }
+}
